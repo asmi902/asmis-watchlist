@@ -1,0 +1,395 @@
+@font-face {
+    font-family: Glitten;
+    src: url("Fonts/Glitten-Regular.otf");
+}
+
+@font-face {
+    font-family: GlittenCaps;
+    src: url("Fonts/GLITTEN\ ALL\ CAPS.ttf");
+}
+
+body{
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+/*------------------Header------------------*/
+/*------------------------------------------*/
+
+/*------------------Hero------------------*/
+
+header{
+    font-family: Glitten;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("images/Banner.jpg");
+    background-size: cover;
+    color: white;
+    text-shadow: 0px 0px 20px white;
+    height: 220px;
+}
+
+.hero-text > h1{
+    font-size: 3.5625rem;
+}
+
+.hero-text > p{
+    font-size: 1rem;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+
+.hero-text > p > a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*------------------Search-Bar------------------*/
+
+.search-bar > div, input, button{
+    height: 40px;
+}
+
+.search-bar > div, .search-bar > input{
+    background: #2E2E2F;
+}
+
+.search-bar{
+    position: absolute;
+    display: flex;
+    width: max-content;
+    top: 90%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.search-bar > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.625em;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.search-bar > input{
+    width: 340px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;   
+    color: white;
+    padding: 0 1.25em;
+    font-weight: bolder
+}
+
+.search-bar > button{
+    padding: 0 2.5em;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #4B4B4B;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*------------------Main------------------*/
+/*----------------------------------------*/
+
+main{
+    background-color: #121212;
+    min-height: 100vh;
+}
+
+.start-exploring{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 160px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 10em auto;
+}
+
+.start-exploring > p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+    color: #2e2e2f;
+}
+
+.film-icon{
+    font-size: 6.25rem;
+}
+
+/*------------------Film------------------*/
+
+main{
+    padding-top: 3.125em;
+}
+
+.film-container p{
+    margin: 0;
+}
+
+.film-container h3{
+    margin: 0;
+}
+
+img{
+    width: 150px;
+}
+
+.film-container{
+    color: white;
+    width: 620px;
+    margin: auto;
+    padding: 1.875em;
+    border-bottom: 1px solid #2C2C2C;
+}
+
+.film{
+    display: flex;
+    gap: 20px;
+}
+
+.poster-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 11px;
+}
+
+.text-one-div{
+    display: flex;
+    gap: 10px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.text-two-div{
+    display: flex;
+    gap: 15px;
+    font-size: 0.9375rem;
+}
+
+.watchlist{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.watchlist > i{
+    color: black;
+    background-color: white;
+    border-radius: 100%;
+    padding: 0.125em;
+    font-size: 0.75rem;
+}
+
+.watchlist:hover > i{
+    background-color: #63C132;
+}
+
+
+
+.plot{
+    color: #A5A5A5;
+}
+
+
+/*-----------------Font--------------------*/
+
+.title{
+    font-size: 1.25rem;    
+}
+
+@media(max-width: 900px){
+    .genre span{
+        color: white;
+    }
+
+    .hero-text > p{
+        text-shadow: 0px 0px 20px white;
+    }
+
+    span{
+        color: black;
+    }
+}
+
+@media(max-width: 660px){
+    /*------------------Header------------------*/
+    /*------------------------------------------*/
+
+    /*------------------Hero------------------*/
+
+    .hero-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        text-shadow: 0px 0px 5px white;
+        height: 150px;
+    }
+
+    .hero-text > h1{
+        font-size: 2rem;
+    }
+
+    .hero-text > p{
+        font-size: 0.8rem;
+        margin-left: 40px;
+        text-shadow: 0px 0px 5px white;
+    }
+
+    /*------------------Search-Bar------------------*/
+
+    .search-bar > div, input, button{
+        height: 35px;
+    }
+
+    .search-bar > div{
+        padding: 0 0.5em;
+    }
+
+    .search-bar > input{
+        width: 190px;
+        font-size: 1rem;
+        padding: 0 1.25em;
+    }
+
+    .search-bar > button{
+        padding: 0 2em;
+    }
+
+    /*------------------Film------------------*/
+
+    main{
+        padding-top: 2em;
+    }
+
+    img{
+        width: 100px;
+    }
+
+    .film-container{
+        color: white;
+        width: 350px;
+        margin: auto;
+        padding: 1.5em;
+        border-bottom: 1px solid #2C2C2C;
+    }
+
+    .film{
+        display: flex;
+        gap: 15px;
+    }
+
+    .poster-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.0625rem;
+    }
+
+    .text-one-div{
+        display: flex;
+        gap: 10px;
+    }
+
+    .rating{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .text-two-div{
+        display: flex;
+        gap: 9px;
+        font-size: 0.8rem;
+    }
+
+    .watchlist{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .watchlist > i{
+        color: black;
+        background-color: white;
+        border-radius: 100%;
+        padding: 0.125em;
+        font-size: 0.75rem;
+    }
+
+    .watchlist:hover > i,.watchlist:active > i{
+        background-color: #63C132;
+    }
+
+    .plot-div{
+        font-size: 0.8rem;
+    }
+
+    .genre span{
+        display: none;
+    }
+
+    /*-----------------Font--------------------*/
+
+    .title{
+        font-size: 1rem;    
+    }
+
+    .rating{
+        font-size: 0.9rem;
+    }
+    
+    .start-exploring > p{
+        font-family: 'Kanit', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        color: #2e2e2f;
+    }
+
+}
